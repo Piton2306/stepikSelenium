@@ -26,25 +26,39 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 
-class find_by:
-    def __init__(self, url):
-        self.url = url
-
-    def find(self):
-        browser = webdriver.Chrome()
-        browser.get(self.url)
-        button = browser.find_element_by_id("submit_button")
-        button.click()
-        sleep(2)
-
-    def by(self):
-        browser = webdriver.Chrome()
-        browser.get(self.url)
-        button = browser.find_element(By.ID, 'submit_button')
-        button.click()
-        sleep(2)
-
-
-link = "http://suninjuly.github.io/simple_form_find_task.html"
-url = find_by(link)
-find_by.find(url)
+# class find_by:
+#     def __init__(self, url):
+#         self.url = url
+#
+#     def find(self):
+#         browser = webdriver.Chrome()
+#         browser.get(self.url)
+#         button = browser.find_element_by_id("submit_button")
+#         button.click()
+#
+#
+#     def by(self):
+#         browser = webdriver.Chrome()
+#         browser.get(self.url)
+#         button = browser.find_element(By.ID, 'submit_button')
+#         button.click()
+#         sleep(2)
+#
+#
+# link = "http://suninjuly.github.io/simple_form_find_task.html"
+# # url = find_by(link)
+# # find_by.by(url)
+# try:
+#     browser = webdriver.Chrome()
+#     browser.get(link)
+#     button = browser.find_element_by_id("submit_button")
+#     button.click()
+#     sleep(2)
+#     browser = webdriver.Chrome()
+#     browser.get(link)
+#     button = browser.find_element(By.ID, 'submit_button')
+#     button.click()
+#     sleep(2)
+# finally:
+#     sleep(5)
+#     browser.close()
