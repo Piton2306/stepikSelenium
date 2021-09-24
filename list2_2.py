@@ -1,7 +1,7 @@
 # from selenium import webdriver
 # from selenium.webdriver.support.select import Select
 # from time import sleep
-#
+from mymodule import calc
 #
 # def summa(a, b):
 #     return str(int(a) + int(b))
@@ -26,8 +26,6 @@
 # from time import sleep
 #
 #
-# def calc(x):
-#     return str(math.log(abs(12 * math.sin(int(x)))))
 #
 #
 # try:
